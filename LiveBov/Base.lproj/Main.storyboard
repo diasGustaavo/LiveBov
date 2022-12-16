@@ -221,31 +221,31 @@
                                 <rect key="frame" x="20" y="778" width="353" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lt-Cj-40F">
-                                        <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" name="verdin"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="B8N-he-HjG"/>
+                                        </constraints>
                                         <color key="tintColor" name="legenda"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="percent" catalog="system">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" name="verdin"/>
-                                            </backgroundConfiguration>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="percent" catalog="system"/>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex.. PETR4" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="AF8-wG-ZaQ">
-                                        <rect key="frame" x="58.666666666666671" y="0.0" width="234.66666666666663" height="40"/>
+                                        <rect key="frame" x="50" y="0.0" width="253" height="40"/>
                                         <color key="backgroundColor" systemColor="systemFillColor"/>
                                         <color key="textColor" name="colorSchemeSoft"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWG-rZ-3q7">
-                                        <rect key="frame" x="303.33333333333331" y="0.0" width="49.666666666666686" height="40"/>
+                                        <rect key="frame" x="313" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" name="verdin"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="AaV-pS-7Tg"/>
+                                        </constraints>
                                         <color key="tintColor" name="legenda"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" name="verdin"/>
-                                            </backgroundConfiguration>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="magnifyingglass" catalog="system"/>
                                     </button>
                                 </subviews>
                             </stackView>
