@@ -1,24 +1,298 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LiveBov" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Fxe-oF-qKc" userLabel="Header Stack View">
+                                <rect key="frame" x="20" y="59" width="353" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PETR4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkR-yz-X3I">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="45.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                        <color key="textColor" name="legenda"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Petróleo Brasileiro S.A. - Petrobras" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="d3G-Om-ieV">
+                                        <rect key="frame" x="0.0" y="47.333333333333329" width="353" height="32.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                        <color key="textColor" name="verdin"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="sna-Et-QWY" userLabel="Content Stack View">
+                                <rect key="frame" x="20" y="206" width="353" height="487"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SdO-TL-nnP" userLabel="FirstRow Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="135.66666666666666"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YR5-Qg-Tlq" userLabel="Abertura Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="135.66666666666666"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sQI-t7-N6G">
+                                                        <rect key="frame" x="53.333333333333329" y="-4.6666666666666714" width="70" height="77"/>
+                                                        <color key="tintColor" name="legenda"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="M44-yD-xTt"/>
+                                                            <constraint firstAttribute="height" constant="70" id="r9i-cZ-u4B"/>
+                                                        </constraints>
+                                                        <imageReference key="image" image="arrow.counterclockwise" catalog="system" symbolScale="large"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21.96" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpt-MX-mYq">
+                                                        <rect key="frame" x="40.666666666666664" y="70" width="95.333333333333343" height="45.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                                        <color key="textColor" name="verdin"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abertura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Jp2-TT-pe8">
+                                                        <rect key="frame" x="52.666666666666671" y="115.33333333333331" width="71" height="20.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" name="colorSchemeSoft"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MwF-Na-DcF" userLabel="CotAtual Stack View">
+                                                <rect key="frame" x="176.66666666666663" y="0.0" width="176.33333333333337" height="135.66666666666666"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8n1-G7-hH9">
+                                                        <rect key="frame" x="53" y="1" width="70" height="68.666666666666671"/>
+                                                        <color key="tintColor" name="legenda"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="70" id="8QJ-hj-ErZ"/>
+                                                            <constraint firstAttribute="width" constant="70" id="ls7-Mm-wkG"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21.77" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhH-Wk-c26">
+                                                        <rect key="frame" x="40.333333333333336" y="70" width="95.333333333333314" height="45.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                                        <color key="textColor" name="verdin"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cot. Atual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="VdV-S3-iI3">
+                                                        <rect key="frame" x="47.999999999999993" y="115.33333333333331" width="80.333333333333314" height="20.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" name="colorSchemeSoft"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nJd-o9-YrS" userLabel="SecondRow Stack View">
+                                        <rect key="frame" x="0.0" y="175.66666666666669" width="353" height="135.66666666666669"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="b7E-Uc-pHt" userLabel="Abertura Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="135.66666666666666"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="imG-0T-Vva">
+                                                        <rect key="frame" x="53.333333333333329" y="-2" width="70" height="74"/>
+                                                        <color key="tintColor" name="legenda"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="0iM-Fb-PeW"/>
+                                                            <constraint firstAttribute="height" constant="70" id="h76-g0-LQh"/>
+                                                        </constraints>
+                                                        <imageReference key="image" image="arrow.down" catalog="system" symbolScale="large"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.77" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bum-Ty-Ql2">
+                                                        <rect key="frame" x="40.666666666666664" y="70" width="95.333333333333343" height="45.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                                        <color key="textColor" name="verdin"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="52 Sem. Low" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="z4g-iP-4rM">
+                                                        <rect key="frame" x="36.333333333333336" y="115.33333333333331" width="103.66666666666666" height="20.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" name="colorSchemeSoft"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t6t-I5-LoT" userLabel="CotAtual Stack View">
+                                                <rect key="frame" x="176.66666666666663" y="0.0" width="176.33333333333337" height="135.66666666666666"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bDg-Fr-2CO">
+                                                        <rect key="frame" x="53" y="1.3333333333333357" width="70" height="67.666666666666657"/>
+                                                        <color key="tintColor" name="legenda"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="4Ew-g0-qC2"/>
+                                                            <constraint firstAttribute="height" constant="70" id="OA2-V4-plB"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38.39" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNF-3Y-DRN">
+                                                        <rect key="frame" x="40.333333333333336" y="70" width="95.333333333333314" height="45.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                                        <color key="textColor" name="verdin"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="52 Sem. High" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="AVf-Uk-6R6">
+                                                        <rect key="frame" x="34.666666666666686" y="115.33333333333331" width="107" height="20.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" name="colorSchemeSoft"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="99x-Am-0Ot" userLabel="SecondRow Stack View">
+                                        <rect key="frame" x="0.0" y="351.33333333333337" width="353" height="135.66666666666663"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rbt-Gw-VtL" userLabel="Abertura Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="135.66666666666666"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tPu-OE-yIK">
+                                                        <rect key="frame" x="53.333333333333329" y="-2.3333333333333357" width="70" height="75.333333333333343"/>
+                                                        <color key="tintColor" name="legenda"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="HFO-fa-T4W"/>
+                                                            <constraint firstAttribute="height" constant="70" id="aDI-Zo-EdP"/>
+                                                        </constraints>
+                                                        <imageReference key="image" image="divide.circle" catalog="system" symbolScale="large"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oel-dl-goZ">
+                                                        <rect key="frame" x="51.333333333333329" y="70" width="74" height="45.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                                        <color key="textColor" name="verdin"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço / Lucro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="H7s-W3-Gb5">
+                                                        <rect key="frame" x="33.333333333333343" y="115.33333333333326" width="110" height="20.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" name="colorSchemeSoft"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uam-7i-vTw" userLabel="CotAtual Stack View">
+                                                <rect key="frame" x="176.66666666666663" y="0.0" width="176.33333333333337" height="135.66666666666666"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up.bin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="isp-M7-TII">
+                                                        <rect key="frame" x="53" y="1.6666666666666643" width="70" height="67"/>
+                                                        <color key="tintColor" name="legenda"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="70" id="Myg-be-CEu"/>
+                                                            <constraint firstAttribute="width" constant="70" id="UVj-L7-AxC"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13.53" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDD-8G-V4b">
+                                                        <rect key="frame" x="40.333333333333336" y="70" width="95.333333333333314" height="45.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                                        <color key="textColor" name="verdin"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucro por ação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="SxU-cz-T8W">
+                                                        <rect key="frame" x="26.333333333333336" y="115.33333333333326" width="123.33333333333331" height="20.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" name="colorSchemeSoft"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nJd-o9-YrS" secondAttribute="trailing" id="7LF-8F-otr"/>
+                                    <constraint firstItem="99x-Am-0Ot" firstAttribute="leading" secondItem="sna-Et-QWY" secondAttribute="leading" id="CQz-Al-M7t"/>
+                                    <constraint firstAttribute="trailing" secondItem="99x-Am-0Ot" secondAttribute="trailing" id="E8m-yD-Xca"/>
+                                    <constraint firstItem="SdO-TL-nnP" firstAttribute="leading" secondItem="sna-Et-QWY" secondAttribute="leading" id="ZbW-Hj-8JX"/>
+                                    <constraint firstItem="nJd-o9-YrS" firstAttribute="leading" secondItem="sna-Et-QWY" secondAttribute="leading" id="bCu-HF-opf"/>
+                                    <constraint firstAttribute="trailing" secondItem="SdO-TL-nnP" secondAttribute="trailing" id="eOi-gi-TIM"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G6u-Cq-kCd" userLabel="Pesquisa Stack View">
+                                <rect key="frame" x="20" y="778" width="353" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lt-Cj-40F">
+                                        <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="40"/>
+                                        <color key="tintColor" name="legenda"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="percent" catalog="system">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" name="verdin"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex.. PETR4" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="AF8-wG-ZaQ">
+                                        <rect key="frame" x="58.666666666666671" y="0.0" width="234.66666666666663" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                        <color key="textColor" name="colorSchemeSoft"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWG-rZ-3q7">
+                                        <rect key="frame" x="303.33333333333331" y="0.0" width="49.666666666666686" height="40"/>
+                                        <color key="tintColor" name="legenda"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" name="verdin"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="Fxe-oF-qKc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7p0-jd-3c2"/>
+                            <constraint firstItem="sna-Et-QWY" firstAttribute="top" secondItem="Fxe-oF-qKc" secondAttribute="bottom" constant="67" id="9bO-SI-15n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sna-Et-QWY" secondAttribute="trailing" constant="20" id="GUY-hg-CQ7"/>
+                            <constraint firstItem="sna-Et-QWY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gtc-UT-0qp"/>
+                            <constraint firstItem="Fxe-oF-qKc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KUa-Yq-XFE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fxe-oF-qKc" secondAttribute="trailing" constant="20" id="Z3E-Bg-c58"/>
+                            <constraint firstItem="G6u-Cq-kCd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ecQ-Ul-IXK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G6u-Cq-kCd" secondAttribute="trailing" constant="20" id="jH6-Tz-cZJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G6u-Cq-kCd" secondAttribute="bottom" id="rE7-Se-UzY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.counterclockwise" catalog="system" width="113" height="128"/>
+        <image name="arrow.down" catalog="system" width="118" height="128"/>
+        <image name="arrow.up" catalog="system" width="118" height="128"/>
+        <image name="arrow.up.bin" catalog="system" width="128" height="92"/>
+        <image name="clock" catalog="system" width="128" height="123"/>
+        <image name="divide.circle" catalog="system" width="128" height="123"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="percent" catalog="system" width="128" height="121"/>
+        <namedColor name="background">
+            <color red="0.10980392160000001" green="0.19215686269999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorSchemeSoft">
+            <color red="0.13300000131130219" green="0.48600000143051147" blue="0.43900001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="legenda">
+            <color red="0.90196078430000004" green="0.8862745098" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="verdin">
+            <color red="0.53333333329999999" green="0.64313725489999995" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
