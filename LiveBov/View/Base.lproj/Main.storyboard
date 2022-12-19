@@ -31,6 +31,9 @@
                                         <color key="tintColor" name="legenda"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="percent" catalog="system"/>
+                                        <connections>
+                                            <action selector="percentageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EMY-u0-5un"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex.. PETR4" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="AF8-wG-ZaQ">
                                         <rect key="frame" x="50" y="0.0" width="253" height="40"/>
@@ -38,6 +41,9 @@
                                         <color key="textColor" name="colorSchemeSoft"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
+                                        <connections>
+                                            <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="LYH-wp-y4j"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWG-rZ-3q7">
                                         <rect key="frame" x="313" y="0.0" width="40" height="40"/>
@@ -48,6 +54,9 @@
                                         <color key="tintColor" name="legenda"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xX2-Bf-esI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -69,7 +78,7 @@
                                                         </constraints>
                                                         <imageReference key="image" image="arrow.counterclockwise" catalog="system" symbolScale="large"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21.96" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpt-MX-mYq">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21.96" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vpt-MX-mYq">
                                                         <rect key="frame" x="40.666666666666664" y="70" width="95.333333333333343" height="45.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
                                                         <color key="textColor" name="verdin"/>
@@ -94,7 +103,7 @@
                                                             <constraint firstAttribute="width" constant="70" id="ls7-Mm-wkG"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21.77" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhH-Wk-c26">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21.77" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yhH-Wk-c26">
                                                         <rect key="frame" x="40.333333333333336" y="70" width="95.333333333333314" height="45.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
                                                         <color key="textColor" name="verdin"/>
@@ -125,7 +134,7 @@
                                                         </constraints>
                                                         <imageReference key="image" image="arrow.down" catalog="system" symbolScale="large"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.77" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bum-Ty-Ql2">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.77" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bum-Ty-Ql2">
                                                         <rect key="frame" x="40.666666666666664" y="70" width="95.333333333333343" height="45.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
                                                         <color key="textColor" name="verdin"/>
@@ -150,7 +159,7 @@
                                                             <constraint firstAttribute="height" constant="70" id="OA2-V4-plB"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38.39" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNF-3Y-DRN">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38.39" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RNF-3Y-DRN">
                                                         <rect key="frame" x="40.333333333333336" y="70" width="95.333333333333314" height="45.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
                                                         <color key="textColor" name="verdin"/>
@@ -181,7 +190,7 @@
                                                         </constraints>
                                                         <imageReference key="image" image="divide.circle" catalog="system" symbolScale="large"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oel-dl-goZ">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Oel-dl-goZ">
                                                         <rect key="frame" x="51.333333333333329" y="70" width="74" height="45.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
                                                         <color key="textColor" name="verdin"/>
@@ -206,7 +215,7 @@
                                                             <constraint firstAttribute="width" constant="70" id="UVj-L7-AxC"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13.53" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDD-8G-V4b">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13.53" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GDD-8G-V4b">
                                                         <rect key="frame" x="40.333333333333336" y="70" width="95.333333333333314" height="45.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
                                                         <color key="textColor" name="verdin"/>
@@ -265,8 +274,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="FiftyTwoSemLow" destination="bum-Ty-Ql2" id="CV1-H8-pDP"/>
+                        <outlet property="aberturaPrice" destination="Vpt-MX-mYq" id="WTA-oa-IUk"/>
+                        <outlet property="atualPreco" destination="yhH-Wk-c26" id="Kji-SL-lmX"/>
+                        <outlet property="fiftyTwoSemHigh" destination="RNF-3Y-DRN" id="GgV-ok-IPe"/>
+                        <outlet property="fiftyTwoSemLow" destination="bum-Ty-Ql2" id="oW2-hK-C5Y"/>
+                        <outlet property="lucroAcao" destination="GDD-8G-V4b" id="TXP-z0-ebI"/>
+                        <outlet property="nomeAcao" destination="d3G-Om-ieV" id="XMB-hl-3oV"/>
                         <outlet property="percentageButton" destination="4Lt-Cj-40F" id="2RQ-wW-KRa"/>
+                        <outlet property="precoLucro" destination="Oel-dl-goZ" id="04f-fB-kSx"/>
                         <outlet property="searchButton" destination="pWG-rZ-3q7" id="L71-zL-8rx"/>
+                        <outlet property="searchTextField" destination="AF8-wG-ZaQ" id="9a5-8z-zq2"/>
+                        <outlet property="siglaAcao" destination="LkR-yz-X3I" id="ybf-oY-Khd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
