@@ -19,25 +19,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Fxe-oF-qKc" userLabel="Header Stack View">
-                                <rect key="frame" x="20" y="59" width="353" height="80"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G6u-Cq-kCd" userLabel="Pesquisa Stack View">
+                                <rect key="frame" x="20" y="59" width="353" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PETR4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkR-yz-X3I">
-                                        <rect key="frame" x="0.0" y="0.0" width="122" height="45.333333333333336"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
-                                        <color key="textColor" name="legenda"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Petróleo Brasileiro S.A. - Petrobras" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="d3G-Om-ieV">
-                                        <rect key="frame" x="0.0" y="47.333333333333329" width="353" height="32.666666666666671"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
-                                        <color key="textColor" name="verdin"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lt-Cj-40F">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" name="verdin"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="B8N-he-HjG"/>
+                                        </constraints>
+                                        <color key="tintColor" name="legenda"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="percent" catalog="system"/>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex.. PETR4" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="AF8-wG-ZaQ">
+                                        <rect key="frame" x="50" y="0.0" width="253" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                        <color key="textColor" name="colorSchemeSoft"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWG-rZ-3q7">
+                                        <rect key="frame" x="313" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" name="verdin"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="AaV-pS-7Tg"/>
+                                        </constraints>
+                                        <color key="tintColor" name="legenda"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="magnifyingglass" catalog="system"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="sna-Et-QWY" userLabel="Content Stack View">
-                                <rect key="frame" x="20" y="206" width="353" height="487"/>
+                                <rect key="frame" x="20" y="256" width="353" height="487"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SdO-TL-nnP" userLabel="FirstRow Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="135.66666666666666"/>
@@ -217,53 +232,42 @@
                                     <constraint firstAttribute="trailing" secondItem="SdO-TL-nnP" secondAttribute="trailing" id="eOi-gi-TIM"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G6u-Cq-kCd" userLabel="Pesquisa Stack View">
-                                <rect key="frame" x="20" y="778" width="353" height="40"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Fxe-oF-qKc" userLabel="Header Stack View">
+                                <rect key="frame" x="20" y="109" width="353" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lt-Cj-40F">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                        <color key="backgroundColor" name="verdin"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="B8N-he-HjG"/>
-                                        </constraints>
-                                        <color key="tintColor" name="legenda"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="percent" catalog="system"/>
-                                    </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex.. PETR4" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="AF8-wG-ZaQ">
-                                        <rect key="frame" x="50" y="0.0" width="253" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemFillColor"/>
-                                        <color key="textColor" name="colorSchemeSoft"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWG-rZ-3q7">
-                                        <rect key="frame" x="313" y="0.0" width="40" height="40"/>
-                                        <color key="backgroundColor" name="verdin"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="AaV-pS-7Tg"/>
-                                        </constraints>
-                                        <color key="tintColor" name="legenda"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="magnifyingglass" catalog="system"/>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PETR4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkR-yz-X3I">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="45.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                        <color key="textColor" name="legenda"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Petróleo Brasileiro S.A. - Petrobras" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="d3G-Om-ieV">
+                                        <rect key="frame" x="0.0" y="47.333333333333343" width="353" height="32.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                        <color key="textColor" name="verdin"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="background"/>
                         <constraints>
-                            <constraint firstItem="Fxe-oF-qKc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7p0-jd-3c2"/>
+                            <constraint firstItem="G6u-Cq-kCd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="31B-HE-FgS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G6u-Cq-kCd" secondAttribute="trailing" constant="20" id="4Zl-UA-Ypz"/>
                             <constraint firstItem="sna-Et-QWY" firstAttribute="top" secondItem="Fxe-oF-qKc" secondAttribute="bottom" constant="67" id="9bO-SI-15n"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sna-Et-QWY" secondAttribute="trailing" constant="20" id="GUY-hg-CQ7"/>
                             <constraint firstItem="sna-Et-QWY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gtc-UT-0qp"/>
                             <constraint firstItem="Fxe-oF-qKc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KUa-Yq-XFE"/>
+                            <constraint firstItem="Fxe-oF-qKc" firstAttribute="top" secondItem="G6u-Cq-kCd" secondAttribute="bottom" constant="10" id="QQU-F1-ucL"/>
+                            <constraint firstItem="G6u-Cq-kCd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Rvx-bz-in8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fxe-oF-qKc" secondAttribute="trailing" constant="20" id="Z3E-Bg-c58"/>
-                            <constraint firstItem="G6u-Cq-kCd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ecQ-Ul-IXK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G6u-Cq-kCd" secondAttribute="trailing" constant="20" id="jH6-Tz-cZJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G6u-Cq-kCd" secondAttribute="bottom" id="rE7-Se-UzY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="percentageButton" destination="4Lt-Cj-40F" id="2RQ-wW-KRa"/>
+                        <outlet property="searchButton" destination="pWG-rZ-3q7" id="L71-zL-8rx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -280,16 +284,16 @@
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="percent" catalog="system" width="128" height="121"/>
         <namedColor name="background">
-            <color red="0.10980392160000001" green="0.19215686269999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10999999940395355" green="0.19200000166893005" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="colorSchemeSoft">
             <color red="0.13300000131130219" green="0.48600000143051147" blue="0.43900001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="legenda">
-            <color red="0.90196078430000004" green="0.8862745098" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.90200001001358032" green="0.88599997758865356" blue="0.76499998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="verdin">
-            <color red="0.53333333329999999" green="0.64313725489999995" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.53299999237060547" green="0.64300000667572021" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>

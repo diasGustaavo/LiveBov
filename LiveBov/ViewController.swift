@@ -8,10 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var percentageButton: UIButton!
+    @IBOutlet weak var searchButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        percentageButton.layer.cornerRadius = 15
+        searchButton.layer.cornerRadius = 15
+        
+        percentageButton.layer.masksToBounds = true
+        searchButton.layer.masksToBounds = true
     }
 
 
